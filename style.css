@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+.field {
+  margin-top: 5px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #000;
+  position: relative;
+}
+
+.gameOver {
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  background-color: #fff;
+  opacity: 0.7;
+  border: solid red 10px;
+}
+
+.score-text {
+  color: blue;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.restartBtn {
+  margin: 10px;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: greenyellow;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.restartBtn:hover {
+  background-color: gray;
+  color: white;
+}
+
+.startGame {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 3px 3px rgba(255, 255, 255, 0.3);
+}
+
+.startGame > h1 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.score {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
+}
+
+.score > h1 {
+  color: #fff;
+  font-size: 15px;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.bestScore {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 5px;
+}
+
+.bestScore > h1 {
+  color: #fff;
+  font-size: 15px;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+}
+
+.snakeBody {
+  background-color: green;
+  border: solid #000 0.5px;
+}
+
+.head {
+  background-color: rgb(2, 78, 2);
+  border: solid #000 0.5px;
+}
+
+.apple {
+  background-color: red;
+  border: solid #000 0.5px;
+}
+
+.level-label {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.fieldSize {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.startGameBtn {
+  margin: 20px;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: greenyellow;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.startGameBtn:hover {
+  background-color: gray;
+  color: white;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="field">
+      <div class="startGame">
+        <h1>Настройки игры:</h1>
+        <label class="fieldSize" for="width">Размер игрового поля:</label>
+        <input placeholder="Ширина..." id="width" name="width" type="number" />
+        <input placeholder="Длина..." id="height" name="height" type="number" />
+        <button class="startGameBtn">Начать игру</button>
+      </div>
+      <div class="gameOver">
+        <h1 class="gameOverTxt">Game Over!</h1>
+        <p class="score-text"></p>
+        <button class="restartBtn">Start again</button>
+      </div>
+      <div class="score"></div>
+      <div class="bestScore"></div>
+    </div>
+
+    <script type="module" src="Main.js"></script>
+  </body>
+</html>
